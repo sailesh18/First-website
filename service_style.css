@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&family=Vujahday+Script&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+
+}
+body{
+	background-image: url("beach.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+header{
+	font-family: 'poppins';
+}
+footer{
+	font-family: 'poppins';
+}
+.menu-bar
+{
+	background:skyblue;
+	text-align: center;
+}
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: red;
+}
+.menu-bar ul li{
+	color: black;
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
+}
+.menu-bar ul li a{
+	text-decoration: none;
+	color: black;
+}
+ .menu-bar ul li:hover
+{
+	background: royalblue;
+	border-radius: 10px;
+}
+.menu-bar ul a:hover
+{
+	color: white;
+}
+
+.sub-menu-1{
+	display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+	display: block;
+	position: absolute;
+	background: skyblue ;
+	margin-top:15px ;
+	margin-left: -15px;
+	border-radius: 5px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+	display: block;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px solid #fff;
+	background:;
+	border-radius: 8px;
+
+	text-align: left;
+
+}
+.sub-menu-2{
+	display: none;
+}
+.hover-me:hover .sub-menu-2{
+	position: absolute;
+	display: block;
+	margin-top: -40px;
+	margin-left: 140px;
+	background-color: rgb(0, 100, 0);
+}
+
+main{
+	color: ;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;	
+	display: flex;
+	justify-content: center;
+	
+	margin-top: 100px;
+	back
+}
+
+.container{
+	
+	width: 100%;
+	height: 100vh;
+	padding: 0 8%;
+}
+.container h1{
+	text-align: center;
+	padding-top: 5%;	
+	margin-bottom: 100px;
+	margin-left: 50px;
+	font-weight: 600;
+	position: relative;
+  }
+  .container h1::after{
+  	 
+  	content: '';
+  	background: #303ef7;
+  	width: 100px;
+  	height: 5px;
+  	position: absolute;
+  	bottom: -5px;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	flex-wrap: wrap;
+  }
+  .row{
+  	padding-left: 150px;
+  	padding-bottom: 20px;
+  margin: 100px; 	
+  	display: grid;  	
+  	grid-template-columns: 250px 250px 250px ;
+  	grid-gap: 30px; 	
+  }
+  .service{
+  	text-align: center;
+  	padding: 25px 10px;
+  	border-radius: 5px;
+  	font-size: 14px;
+  	cursor: pointer;
+  	background: transparent;
+  	transition: transform 0.5s, background0.5s;
+  }
+  .service i{
+  	 font-size: 40px
+  	 margin-bottom: 10px;
+  	 color: #303ef;
+
+}
+.service h2{
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+.service:hover{
+	background: #303ef7;
+	color: #fff;
+	transform: scale(1.05); 
+}
+.service:hover i{
+	color: #fff;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+footer{
+	
+	width: 93.5%;
+	background: royalblue;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+footer .social-icon,
+footer .menu
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+
+}
+footer .social-icon li,
+footer .menu li
+{
+	list-style: none;
+}
+footer .social-icon li a
+{
+	font-size: 2em;
+	color: white;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+}
+footer .social-icon li a:hover{
+	transform: translateY(-10px);
+}
+
+footer .menu li a
+{
+	font-size: 1.2em;
+	color: white;
+	margin: 0 10px;
+	display: inline-block;
+	text-decoration: none;
+	opacity: 0.75;
+}
+footer .menu li a:hover
+{
+	opacity: 1;
+
+}
+footer p{
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom:10px;
+	font-size: 1.1em;
+}
